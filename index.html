@@ -1,7 +1,8 @@
+
 <label for="Product Name">Product Name:</label><br>
 <textarea rows="1" cols="50" name="Product Name" id="Product Name">Enter name</textarea><br>
 
-<label for="Quantity">Quantity:</label><br>
+<label for="Quantity">Quantity:</label>
 <select id="Quantity" name="Quantity">
   <option value="1">1</option>
   <option value="2">2</option>
@@ -18,4 +19,46 @@
 <label for="Name">Name:</label><br>
 <textarea rows="1" cols="50" name="Name" id="Name">Enter name</textarea><br>
 
-<form action=“mailto:e-mail_address” method=“post” enctype=“text/plain”>
+<form action="/submit-endpoint" method="POST">
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+</form>
+
+
+<h2>Address</h2>
+<label for="Country">Country:</label>
+<select id="Country" name="Country">
+  <option value="Canada">Canada</option>
+</select><br>
+
+<label for="Province">Province:</label>
+<select id="Province" name="Province">
+  <option value="Alberta">Alberta</option>
+  <option value="British Columbia">British Columbia</option>
+  <option value="Manitoba">Manitoba</option>
+  <option value="New Brunswick">New Brunswick</option>
+  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+  <option value="Nova Scotia">Nova Scotia</option>
+  <option value="Ontario">Ontario</option>
+  <option value="Prince Edward Island">Prince Edward Island</option>
+  <option value="Quebec">Quebec</option>
+  <option value="Saskatchewan">Saskatchewan</option>
+</select><br>
+
+<label for="City">City:</label>
+<select id="City" name="City">
+  <option value="Calgary">Calgary</option>
+  <option value="Edmonton">Edmonton</option>
+  <option value="Vancouver">Vancouver</option>
+  <option value="Toronto">Toronto</option>
+  <option value="Montreal">Montreal</option>
+</select><br>
+
+<label for="Street">Street:</label><br>
+<textarea rows="1" cols="50" name="Street" id="Street">Enter street</textarea><br>
+
+<label for="Postal Code">Postal Code:</label><br>
+<textarea rows="1" cols="50" name="Postal Code" id="Postal Code">Enter postal code</textarea><br>
+
+<input type="submit" value="Submit Order">
